@@ -1,0 +1,6 @@
+D:\CSharpCode\Doujin_Battle_Core\bin\Debug\BattleCore.exe.config
+D:\CSharpCode\Doujin_Battle_Core\bin\Debug\BattleCore.exe
+D:\CSharpCode\Doujin_Battle_Core\bin\Debug\BattleCore.pdb
+D:\CSharpCode\Doujin_Battle_Core\obj\Debug\BattleCore.exe
+D:\CSharpCode\Doujin_Battle_Core\obj\Debug\BattleCore.pdb
+D:\CSharpCode\Doujin_Battle_Core\obj\Debug\BattleCore.csprojResolveAssemblyReference.cache
