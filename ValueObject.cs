@@ -12,7 +12,8 @@ using System.Collections.Generic;
 namespace BattleCore
 {
     /// <summary>
-    /// Description of ValueObject.
+    /// 一个能较为灵活地在运行时增减变量的基类，已完成
+    /// 现在尚未决定是否使用，暂时搁置
     /// </summary>
     public class ValueObject
     {

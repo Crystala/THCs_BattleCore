@@ -11,11 +11,12 @@ using System;
 namespace BattleCore
 {
     /// <summary>
-    /// Description of SingleGridObject.
+    /// 在棋盘上只占用一个格子的对象的基类
     /// </summary>
     public class SingleGridObject: BoardObject
     {
         #region Variables
+        /// 所占用的格子
         public Grid grid;
         #endregion
         

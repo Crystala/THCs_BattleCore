@@ -9,7 +9,7 @@ namespace BattleCore
     public class Position
     {
         #region Variables
-        // 两个坐标的封装
+        /// 两个坐标的封装
         public int x {
             get;
             set;
@@ -20,18 +20,18 @@ namespace BattleCore
         }
         #endregion
 
-        //构造函数
+        ///构造函数
         public Position(int x, int y) {
             this.x = x;
             this.y = y;
         }
         
-        //ToString，调试用
+        ///ToString，调试用
 		public override string ToString() {
 			return string.Format("[Position X={0}, Y={1}]", x, y);
 		}
 
-		//重载运算符和Equals，方便判断坐标是否相同
+		///重载运算符和Equals，方便判断坐标是否相同
         #region Equals and GetHashCode implementation
         public override bool Equals(object obj) {
             Position other = obj as Position;
@@ -62,9 +62,9 @@ namespace BattleCore
         }
         #endregion
         
-        //重载另一些用于运算的运算符
-        //包括加减乘，除法因可能调整舍入方式不统一重载
-        //包括大小比较，仅当全部坐标均大于/小于另一者时才会返回真
+        /// 重载另一些用于运算的运算符
+        /// 包括加减乘，除法因可能调整舍入方式不统一重载
+        /// 包括大小比较，仅当全部坐标均大于/小于另一者时才会返回真
         #region Calculation Override
         public static Position operator +(Position lhs, Position rhs) {
             if (ReferenceEquals(lhs, null)) {

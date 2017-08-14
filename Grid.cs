@@ -16,11 +16,11 @@ namespace BattleCore
 	public class Grid
 	{
 	    #region Variables
-	    //所处棋盘
+	    /// 所处棋盘
         public Board Board = null;
-        //在棋盘上的位置
+        /// 在棋盘上的位置
 	    private readonly Position position = new Position(0, 0);
-	    //该格子上的地形、人物与弹幕
+	    /// 该格子上的地形、人物与弹幕
 	    public Terrain terrain;
 	    public Character character;
 	    public Bullet bullet;

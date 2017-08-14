@@ -11,18 +11,21 @@ using System;
 namespace BattleCore
 {
     /// <summary>
-    /// Description of Terrain.
+    /// 地形的基类
     /// </summary>
-    public class Terrain
+    public class Terrain: SingleGridObject
     {
         #region Variables
+        /// 地形种类的枚举
         public enum TerrainType {
             
         }
         
+        /// 地形种类
         public TerrainType type;
-        public string name;
+        /// 是否可停留
         public bool stayable;
+        /// 移动消耗
         public int movementCost;
         #endregion
         
@@ -30,12 +33,26 @@ namespace BattleCore
         {
         }
         
-        public void OnStepped(Bullet bullet)
+        /// 弹幕停止于该地形时调用
+        public virtual void OnStepped(Bullet bullet)
         {
             
         }
         
-        public void OnStepped(Character character)
+        /// 角色停止于该地形时调用
+        public virtual void OnStepped(Character character)
+        {
+            
+        }
+        
+        /// 弹幕经过该地形时调用
+        public virtual void OnPassed(Bullet bullet)
+        {
+            
+        }
+        
+        /// 角色经过该地形时调用
+        public virtual void OnPassed(Character character)
         {
             
         }

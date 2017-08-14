@@ -12,7 +12,7 @@ using System.Collections.Generic;
 namespace BattleCore
 {
     /// <summary>
-    /// 所有可以出现在棋盘上的对象的基类，定义了一些基本的属性和方法
+    /// 所有可以出现在棋盘上的对象(角色与地形)的基类，定义了一些基本的属性和方法
     /// </summary>
     public class BoardObject
     {

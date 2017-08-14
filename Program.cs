@@ -14,41 +14,15 @@ namespace BattleCore
     
 	class Program
 	{
-	    private List<int> l = new List<int>();
-	    
 		public static void Main(string[] args)
 		{
 			Console.WriteLine("Hello World!");
 			
-			//  Implement Functionality Here
-			B b = new B();
-			b.F();
+			Dice d = new Dice(6);
+			Console.WriteLine(d);
 			
 			Console.Write("Press any key to continue . . . ");
 			Console.ReadKey(true);
 		}
-		
-		void F(List<Position> lp, Position pos)
-		{
-            l.Add(1);
-			return;
-		}
-	}
-	
-	public class A
-	{
-	    public virtual void F()
-	    {
-	        return;
-	    }
-	}
-	
-	public class B: A
-	{
-        public override void F()
-        {
-            base.F();
-            Console.WriteLine("Boom!");
-        }
 	}
 }

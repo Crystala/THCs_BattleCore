@@ -11,7 +11,7 @@ using System;
 namespace BattleCore
 {
     /// <summary>
-    /// Description of SpellCard.
+    /// 符卡的基类
     /// </summary>
     public class SpellCard
     {
@@ -19,7 +19,8 @@ namespace BattleCore
         {
         }
         
-        public void OnUse()
+        /// 使用时的行为
+        public virtual void OnUse()
         {
             
         }
